@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background:black;
+    color:white;
+}
+#header{
+    width:100%;
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav img{
+    margin-left: 60px;
+    margin-top: 10px;
+}
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin:10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+    position:relative;
+    
+}
+nav ul li a::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background:white;
+    left:0;
+    bottom:-6px;
+    position:absolute;
+    
+}
+nav ul li :hover::after{
+    width:100%;
+}
+.info{
+    margin-left: 5%;
+    margin-top: 15%;
+}
+.info h1{
+    font-size: 50px;
+    margin-bottom:4px;
+}
+.info h3{
+    font-size: 20px;
+    margin-bottom:10px;
+    font-weight: lighter;
+}
+span{
+    color:yellowgreen
+}
+.info p{
+    color:grey;
+    line-height: 22px;
+}
+.info a{
+    background: red;
+    color:white;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight:bold;
+    display:inline-block;
+    margin:30px 0;
+    border-radius: 5px;
+}
+.image{
+    width:45%;
+    height: 80%;
+    position:absolute;
+    bottom:0;
+    right: 40px;
+}
+.image img{
+    height: 100%;
+    position:absolute;
+    left:50%;
+    bottom:0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.image:hover .shape{
+    bottom:40px
+}
+.image:hover .boy{
+    left: 45%;
+}
+#insta{
+    margin-top:20px;
+    padding-left:65px;
+    padding-right:20px;
+    color:white;
+    
+}
+#linked{
+    margin-top:20px;
+    padding-right:20px;
+    color:white;
+}
+#git{
+    margin-top:20px;
+    padding-right:20px;
+    color:white;
+}
+#facebook{
+    color:white;
+}
+.contact{
+    border: solid;
+    border-color:cornflowerblue;
+    border-radius: 5px;
+    padding:4px 4px;
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
